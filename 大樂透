@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a,m;
+	printf("輸入一個數字 :");
+	scanf("%2d",&a,&m);
+	srand(time(NULL));
+	m=rand()%49+1;
+	printf("%2d,%2d",a,m);
+	
+	if(a==m)
+	printf("答對");
+		else
+	printf("答錯");
+	return 0;
+}
